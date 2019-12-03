@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  /* takes up the entire height no matter how big the browser is */
+  height: 100vh;
+  background: #333 url('img/background.jpg') no-repeat center center / cover;
+ 
+  color: white;
+  /* no scroll bars */
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  /* Changes the direction of the flex from horizontal to vertial */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+h1, h2 {
+  /* font-weight: 200; */
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Media Queries */
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+ /* For screens 800px and smaller */
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Fot screen 500px and smaller */
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
